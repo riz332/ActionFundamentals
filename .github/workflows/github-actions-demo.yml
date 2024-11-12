@@ -12,11 +12,13 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: Event that triggered the workflow
+        run: |
           echo "The job was triggered by event: ${{ github.event_name }}"
-          echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}"
+          echo "The name of your branch is ${{ github.ref }} and your repository is ."
       
-      - uses: actions/checkout@v3.3.0
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
 
       - name: List file in the repository
         run: |
