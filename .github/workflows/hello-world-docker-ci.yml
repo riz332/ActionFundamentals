@@ -18,4 +18,4 @@ jobs:
           who-to-greet: riz332
 
       - name: Output time set in the container
-        run: echo "The time was ${{ teps.hello-action.outputs.time }} when the action said hello"
+        run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
