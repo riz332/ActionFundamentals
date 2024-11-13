@@ -12,4 +12,4 @@ jobs:
     needs: call-workflow
     steps:
       - name: Output from another workflow
-        run: echo "Time was ${{ needs.call-workflow.outputs.current-time }}
+        run: echo "Time was ${{ needs.call-workflow.outputs.current-time }}"
