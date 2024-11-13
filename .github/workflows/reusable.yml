@@ -18,7 +18,7 @@ jobs:
       current-time: ${{ steps.time.outputs.time }}
     steps:
       - name: Output Hello to console
-        run: Echo "Hello ${{ input.who-to-greet }}"
+        run: Echo "Hello ${{ inputs.who-to-greet }}"
 
       - name: Set time
         id: time
