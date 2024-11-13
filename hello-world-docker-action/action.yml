@@ -1,0 +1,7 @@
+name: Docker Action
+
+on:
+  workflow_dispatch:
+    inputs:
+      who-to-greet:
+        default: world
